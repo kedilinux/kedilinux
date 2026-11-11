@@ -22,6 +22,7 @@ def setup():
         "-Dbash-completions=true",
         "-Dzsh-completions=false",
         "-Dpkgconfig=true",
+        """-Dbranding='"Kedi GNU/Linux"'""",
     ]
     mesontools.configure(" ".join(options))
 
