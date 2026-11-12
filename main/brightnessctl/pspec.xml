@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>brightnessctl</Name>
+        <Homepage>https://github.com/Hummer12007/brightnessctl</Homepage>
+        <Packager>
+            <Name>Lemi Sander</Name>
+            <Email>kedilinux@tuta.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>app:console</IsA>
+        <IsA>library</IsA>
+        <Summary>brightnessctl is a command-line utility that adjusts screen brightness</Summary>
+        <Description>brightnessctl is a command-line utility that adjusts screen brightness and backlight on LED displays</Description>
+        <Archive sha1sum="b79e14509e395f7699748b64f5fdaa5a02f094c1" type="targz">https://github.com/Hummer12007/brightnessctl/archive/refs/tags/0.5.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>make</Dependency>
+            <Dependency>gcc</Dependency>
+        </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>brightnessctl</Name>
+        <RuntimeDependencies>
+            <Dependency>glibc</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/lib/udev/rules.d</Path>
+        </Files>
+    <Package>
+    <History>
+        <Update release="1">
+            <Date>2026-11-12</Date>
+            <Version>0.5.1</Version>
+            <Comment>First release, for Kedi Linux.</Comment>
+            <Name>Lemi Sander</Name>
+            <Email>kedilinux@tuta.com</Email>
+        </Update>
+    </History>
+</PISI>
