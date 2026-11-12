@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <IsA>library</IsA>
         <Summary>brightnessctl is a command-line utility that adjusts screen brightness</Summary>
-        <Description>brightnessctl is a command-line utility that adjusts screen brightness and backlight on LED displays</Description>
+        <Description>brightnessctl is a command-line utility that adjusts screen backlight brightness and other LEDs, like keyboard backlights</Description>
         <Archive sha1sum="b79e14509e395f7699748b64f5fdaa5a02f094c1" type="targz">https://github.com/Hummer12007/brightnessctl/archive/refs/tags/0.5.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>make</Dependency>
