@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>iwd-openrc</Name>
+        <Homepage> https://packages.gentoo.org/packages/net-wireless/iwd</Homepage>
+        <Packager>
+            <Name>Lemi Sander</Name>
+            <Email>kedilinux@tuta.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>service</IsA>
+        <Summary>iwd-openrc is the init.d script required for iwd on OpenRC</Summary>
+        <Description>iwd-openrc is the init.d script required for iwd on OpenRC. This is for the base iso of Kedi Linux</Description>
+        <Archive sha1sum="30f59b65c11b4a3fabc17726fff050875647c41f" type="binary">https://raw.githubusercontent.com/gentoo/gentoo/50a1101f3c952f5086171aaf188ce09033f38f7f/net-wireless/iwd/files/iwd.initd-r1</Archive>
+    </Source>
+    <Package>
+        <Name>iwd-openrc</Name>
+        <RuntimeDependencies>
+            <Dependency>iwd</Dependency>
+            <Dependency>dbus-openrc</Dependency>
+            <Dependency>openrc</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/init.d</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2026-11-12</Date>
+            <Version>3.12</Version>
+            <Comment>First release, for Kedi Linux</Comment>
+            <Name>Lemi Sander</Name>
+            <Email>kedilinux@tuta.com</Email>
+        </Update>
+    </History>
+</PISI>
