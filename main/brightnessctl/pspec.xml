@@ -29,7 +29,7 @@
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="data">/lib/udev/rules.d</Path>
         </Files>
-    <Package>
+    </Package>
     <History>
         <Update release="1">
             <Date>2026-11-12</Date>
