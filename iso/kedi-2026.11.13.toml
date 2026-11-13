@@ -1,5 +1,5 @@
 name = "Kedi GNU/Linux"
-version = "2026.11.12"
+version = "2026.11.13"
 volume_label = "KEDI_LIVE"
 hostname = "kedi"
 live_user = "kedi"
@@ -36,7 +36,7 @@ work_dir = "/build/pisi-iso-creator"
 squashfs_compression = "xz"
 kernel_cmdline = "console=tty0 console=ttyS0"
 live_initramfs = true
-output_iso = "/build/kedi-base-2026.11.12-live.iso"
+output_iso = "/build/kedi-base-2026.11.13-live.iso"
 
 post_install_script = '''
 set -e
