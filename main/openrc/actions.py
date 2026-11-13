@@ -10,7 +10,6 @@ from pisi.actionsapi import pisitools
 def setup():
     options = [
         "--buildtype=release",
-        # mesontools passes /usr/sbin and /usr/bin; OpenRC belongs in /sbin and /bin
         "--sbindir=/sbin",
         "--bindir=/bin",
         "--libexecdir=/usr/libexec",
@@ -32,8 +31,6 @@ def build():
 def install():
     mesontools.install()
 
-    # Ship empty runlevels: which services are enabled is up to the system,
-    # and pisi would bring removed links back on every upgrade.
     pisitools.remove("/etc/runlevels/*/*")
 
     pisitools.dodoc("LICENSE", "README*")
