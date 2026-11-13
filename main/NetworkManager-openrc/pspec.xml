@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>dhcpcd-openrc</Name>
+        <Homepage>https://gitlab.freedesktop.org/NetworkManager/NetworkManager</Homepage>
+        <Packager>
+            <Name>Lemi Sander</Name>
+            <Email>kedilinux@tuta.com</Email>
+        </Packager>
+        <License>GPLv2+</License>
+        <IsA>service</IsA>
+        <Summary>Kedi Linux init.d script for OpenRC</Summary>
+        <Description>Init.d script required to launch the NetworkManager network configuration utility for OpenRC</Description>
+        <Archive sha1sum="0bb64920133a60149157feccb996ba5c9067449e" type="binary">https://repo.kedilinux.org/init.d/NetworkManager</Archive>
+    </Source>
+    <Package>
+        <Name>NetworkManager-openrc</Name>
+        <RuntimeDependencies>
+            <Dependency>NetworkManager</Dependency>
+            <Dependency>openrc</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/init.d</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2026-11-14</Date>
+            <Version>10.5.2</Version>
+            <Comment>First release, for Kedi Linux</Comment>
+            <Name>Lemi Sander</Name>
+            <Email>kedilinux@tuta.com</Email>
+        </Update>
+    </History>
+</PISI>
