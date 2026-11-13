@@ -1,4 +1,4 @@
-#!/usr/bin/openrc-run
+#!/sbin/openrc-run
 # Copyright (c) 2008 Saleem Abdulrasool <compnerd@compnerd.org>
 # Copyright 2013-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
