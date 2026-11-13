@@ -12,7 +12,7 @@
         <IsA>service</IsA>
         <Summary>Kedi Linux init.d script for OpenRC</Summary>
         <Description>Init.d script required to launch the NetworkManager network configuration utility for OpenRC</Description>
-        <Archive sha1sum="0bb64920133a60149157feccb996ba5c9067449e" type="binary">https://repo.kedilinux.org/init.d/NetworkManager</Archive>
+        <Archive sha1sum="36d3f1b390ffb4dd1c1d39cc504051dc1bf0adef" type="binary">https://repo.kedilinux.org/init.d/NetworkManager</Archive>
     </Source>
     <Package>
         <Name>NetworkManager-openrc</Name>
