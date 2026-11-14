@@ -23,8 +23,17 @@
         <Files>
             <Path fileType="config">/etc/init.d</Path>
         </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0600" target="/etc/conf.d/crond">crond</AdditionalFile>
+        </AdditionalFiles>
     </Package>
     <History>
+        <Update release="2">
+            <Date>2026-11-14</Date>
+            <Version>1.36.1</Version>
+            <Comment>Urgent syslogd fix</Comment>
+            <Name>Lemi Sander</Name>
+            <Email>kedilinux@tuta.com</Email>
         <Update release="1">
             <Date>2026-11-14</Date>
             <Version>1.36.1</Version>

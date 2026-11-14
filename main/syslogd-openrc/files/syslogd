@@ -1,0 +1,2 @@
+SYSLOGD_OPTS="-n"
+command_background="yes"
