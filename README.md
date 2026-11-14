@@ -2,7 +2,7 @@
 
  Kedi GNU/Linux paket tarifleri: OpenRC tabanlı bir Pisi Linux çatalı
 
- Package recipes for Kedi Linux, an OpenRC-based fork of Pisi Linux
+ Package recipes for Kedi Linux, an OpenRC-based fork of Pisi Linux. This repository only includes packages that have been added and/or modified from Pisi Linux, meaning the binary repository contains a mirror of stable2.pisilinux.org. You can view Pisi GNU/Linux's repository for package recipies at https://github.com/pisilinux/main
 
 # Kedi GNU/Linux Nedir? What is Kedi GNU/Linux?
 
