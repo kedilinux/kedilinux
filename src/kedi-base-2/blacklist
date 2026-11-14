@@ -1,0 +1,4 @@
+# This is blacklist for pisi package manager: Blacklists sysvinit and mudur from entering a Kedi Linux system from regular updates or new package installations
+
+sysvinit
+mudur
