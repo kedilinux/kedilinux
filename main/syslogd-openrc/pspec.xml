@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>syslogd-openrc</Name>
+        <Homepage>https://busybox.net</Homepage>
+        <Packager>
+            <Name>Lemi Sander</Name>
+            <Email>kedilinux@tuta.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>service</IsA>
+        <Summary>syslogd-openrc is the init.d script required for the syslog logger daemon on OpenRC</Summary>
+        <Description>syslogd-openrc is the init.d script required for the syslog logger daemon on OpenRC. This is for the base iso of Kedi Linux</Description>
+        <Archive sha1sum="f300ef78f683de9c3983d51dfe9d9988ad02d5f7" type="binary">https://raw.githubusercontent.com/gentoo/gentoo/7c558088fc8b3e4bf28ded33509ad971e72c8a4e/sys-apps/busybox/files/syslogd.initd</Archive>
+    </Source>
+    <Package>
+        <Name>syslogd-openrc</Name>
+        <RuntimeDependencies>
+            <Dependency>busybox</Dependency>
+            <Dependency>openrc</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/init.d</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2026-11-14</Date>
+            <Version>1.36.1</Version>
+            <Comment>First release, for Kedi Linux</Comment>
+            <Name>Lemi Sander</Name>
+            <Email>kedilinux@tuta.com</Email>
+        </Update>
+    </History>
+</PISI>
