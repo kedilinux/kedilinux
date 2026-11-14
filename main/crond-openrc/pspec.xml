@@ -23,6 +23,7 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc/init.d</Path>
+            <Path fileType="config">/etc/conf.d</Path>
             <Path fileType="config">/var/spool/cron</Path>
         </Files>
         <AdditionalFiles>
@@ -31,7 +32,7 @@
         </AdditionalFiles>
     </Package>
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2026-11-15</Date>
             <Version>1.36.1</Version>
             <Comment>Urgent crond fix</Comment>
