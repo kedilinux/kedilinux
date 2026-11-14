@@ -23,7 +23,11 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc/init.d</Path>
+            <Path fileType="config">/var/spool/cron</Path>
         </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0600" target="/var/spool/cron/crontabs/root">root</AdditionalFile>
+        </AdditionalFiles>
     </Package>
     <History>
         <Update release="1">
