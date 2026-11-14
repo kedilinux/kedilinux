@@ -1,8 +1,8 @@
 ![Kedi GNU/Linux](static/kedi-logo-white.png)
 
- Kedi GNU/Linux paket tarifleri: OpenRC tabanlı bir Pisi Linux Çatalı. Bu depo yalnizca Pisi Linux'tan eklenmiş ve/veya modife edilimis konteyneri buzlanır, yani Kedi GNU/Linux'un ikili deposu stabil2.pisilinux.org serbest bırakılır. Pisi GNU/Linux paket resipeler https://github.com/pisilinux/main 'de bilgilendiricisin.
+ Kedi GNU/Linux paket tarifleri: OpenRC tabanlı bir Pisi Linux çatalı. Bu depo yalnızca Pisi Linux'tan eklenmiş ve/veya modifiye edilmiş paketleri içerir, yani Kedi GNU/Linux'un ikili deposu stable2.pisilinux.org'un yansımasıdır. Pisi GNU/Linux paket tariflerini https://github.com/pisilinux/main ve https://github.com/pisilinux/core depolarında bulabilirsin.
 
- Package recipes for Kedi Linux, an OpenRC-based fork of Pisi Linux. This repository only includes packages that have been added and/or modified from Pisi Linux, meaning the binary repository contains a mirror of stable2.pisilinux.org. You can view Pisi GNU/Linux's repository for package recipies at https://github.com/pisilinux/main
+ Package recipes for Kedi Linux, an OpenRC-based fork of Pisi Linux. This repository only includes packages that have been added and/or modified from Pisi Linux, meaning the binary repository contains a mirror of stable2.pisilinux.org. You can view Pisi GNU/Linux's repositories for package recipies at https://github.com/pisilinux/main and https://github.com/pisilinux/core
 
 # Kedi GNU/Linux Nedir? What is Kedi GNU/Linux?
 
