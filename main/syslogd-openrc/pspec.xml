@@ -24,7 +24,7 @@
             <Path fileType="config">/etc/init.d</Path>
         </Files>
         <AdditionalFiles>
-            <AdditionalFile owner="root" permission="0600" target="/etc/conf.d/crond">crond</AdditionalFile>
+            <AdditionalFile owner="root" permission="0600" target="/etc/conf.d/syslogd">syslogd</AdditionalFile>
         </AdditionalFiles>
     </Package>
     <History>
