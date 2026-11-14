@@ -34,6 +34,7 @@
             <Comment>Urgent syslogd fix</Comment>
             <Name>Lemi Sander</Name>
             <Email>kedilinux@tuta.com</Email>
+        </Update>
         <Update release="1">
             <Date>2026-11-14</Date>
             <Version>1.36.1</Version>
