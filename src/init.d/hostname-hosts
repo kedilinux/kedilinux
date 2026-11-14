@@ -1,0 +1,20 @@
+#!/sbin/openrc-run
+# Licensed under the GNU General Public Licence v3
+
+description="Fix /etc/hosts file on boot"
+
+depend()
+{
+    after hostname
+    need localmount
+}
+
+start()
+{
+    read -r name < /etc/hostname
+    if [ -n "$name" ] || return 0; then
+        ebegin "Copying hostname to /etc/hosts"
+        sed -i "s/^\(127\.0\.0\.1[[:space:]]\+localhost\).*/\1 $name/" /etc/hosts
+        eend $?
+    fi
+}
