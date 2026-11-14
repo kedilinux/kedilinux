@@ -1,0 +1,5 @@
+# min hour day month weekday  command
+0     *    *   *     *        for f in /etc/cron.hourly/*;  do [ -x "$f" ] && "$f"; done
+0     3    *   *     *        for f in /etc/cron.daily/*;   do [ -x "$f" ] && "$f"; done
+15    4    *   *     6        for f in /etc/cron.weekly/*;  do [ -x "$f" ] && "$f"; done
+30    5    1   *     *        for f in /etc/cron.monthly/*; do [ -x "$f" ] && "$f"; done

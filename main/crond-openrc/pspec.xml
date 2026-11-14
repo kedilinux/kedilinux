@@ -10,13 +10,14 @@
         </Packager>
         <License>GPLv2</License>
         <IsA>service</IsA>
-        <Summary>cron-openrc is the init.d script required for the crond cron daemon on OpenRC</Summary>
-        <Description>syslogd-openrc is the init.d script required for the crond cron daemon on OpenRC. This is for the base iso of Kedi Linux</Description>
+        <Summary>crond-openrc is the init.d script required for the crond cron daemon on OpenRC</Summary>
+        <Description>crond-openrc is the init.d script required for the crond cron daemon on OpenRC. This is for the base iso of Kedi Linux</Description>
         <Archive sha1sum="5babada2b21be11fb3dc0393f33fdd1511521ec4" type="binary">https://raw.githubusercontent.com/gentoo/gentoo/1063e8166b171ac8ca56587e0be52466f50bcf8a/sys-apps/busybox/files/crond.initd</Archive>
     </Source>
     <Package>
         <Name>crond-openrc</Name>
         <RuntimeDependencies>
+            <Dependency>syslogd-openrc</Dependency>
             <Dependency>busybox</Dependency>
             <Dependency>openrc</Dependency>
         </RuntimeDependencies>
