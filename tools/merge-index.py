@@ -2,20 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # Licensed under the GNU General Public License, version 3.
-#
-# Makes Kedi's merged binary repo index: Pisi's packages plus Kedi's, in one index.
-#
-#   pisi index --skip-signing        (in the folder with Kedi's .pisi files, as before)
-#   python merge-index.py pisi-index.xml -o merged
-#
-# The first argument is Kedi's own index from `pisi index`. Pisi's index is downloaded
-# from stable2 and checked against its .sha1sum. When a package is in both, Kedi's wins.
-# Pisi's packages keep their paths; repo.kedilinux.org fetches and caches them from
-# stable2 the first time someone downloads them.
-#
-# The output folder gets the same files `pisi index` writes (pisi-index.xml, .xz and
-# their .sha1sum, plus a gpg .sig for each unless --skip-signing). Upload them to 1/.
-# Run it again whenever Pisi updates; Kedi's own index stays the input every time.
+# Merges kedi and pisi repos
 
 from __future__ import print_function
 
@@ -44,7 +31,6 @@ def sha1_file(path):
 
 
 def write_sha1sum(path):
-    # Like pisi: just the hex digest, no file name, no newline.
     with open(path + ".sha1sum", "w") as f:
         f.write(sha1_file(path))
 
@@ -78,8 +64,6 @@ def main():
     args = parser.parse_args()
 
     kedi = ET.parse(args.kedi_index).getroot()
-    # A merged index has Pisi's <Distribution>; Kedi's own never does. Merging a merged
-    # index would freeze every Pisi package at today's version as if it were Kedi's.
     if kedi.find("Distribution") is not None:
         sys.exit("%s is already a merged index; give the one from `pisi index`" % args.kedi_index)
     kedi_packages = kedi.findall("Package")
@@ -103,7 +87,6 @@ def main():
                 continue
             pisi_count += 1
         elif element.tag == "Distribution":
-            # Pisi must not treat one of Kedi's packages as obsolete.
             obsoletes = element.find("Obsoletes")
             if obsoletes is not None:
                 for p in list(obsoletes):
