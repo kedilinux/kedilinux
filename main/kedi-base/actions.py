@@ -13,7 +13,7 @@ def build():
     pass
 
 def install():
-    pisitools.insinto("/etc/init.d", "hostname-hosts")
+    pisitools.doexe("hostname-hosts", "/etc/init.d")
     pisitools.insinto("/etc/pisi", "blacklist")
     pisitools.insinto("/etc/tmpfiles.d", "udev.conf")
     pisitools.dodir("/etc/mudur/services/disabled")
