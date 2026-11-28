@@ -59,7 +59,7 @@
             <Dependency>qps</Dependency>
             <Dependency>qlipper</Dependency>
             <Dependency>icon-theme-hicolor</Dependency>
-            <Dependency>iwgtk</Dependency>
+            <Dependency>iwd-applet</Dependency>
             <Dependency>alsa-utils</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -76,6 +76,13 @@
         </AdditionalFiles>
     </Package>
     <History>
+        <Update release="15">
+            <Date>2026-11-28</Date>
+            <Version>8</Version>
+            <Comment>Replace iwgtk with iwd-applet</Comment>
+            <Name>Lemi Sander</Name>
+            <Email>kedilinux@tuta.com</Email>
+        </Update>
         <Update release="14">
             <Date>2026-11-28</Date>
             <Version>8</Version>
