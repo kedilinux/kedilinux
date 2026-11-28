@@ -6,7 +6,7 @@ description="Create Volatile Files and Directories"
 
 depend()
 {
-	provide tmpfiles-setup tmpfiles.setup
+	provide tmpfiles.setup
 	need localmount
 }
 
