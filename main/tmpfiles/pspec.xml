@@ -37,6 +37,7 @@
         </AdditionalFiles>
         <Replaces>
             <Package>systemd-tmpfiles</Package>
+            <Package>kedilinux-tmpfiles</Package>
         </Replaces>
     </Package>
     <History>
