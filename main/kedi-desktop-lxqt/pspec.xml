@@ -72,7 +72,7 @@
         <AdditionalFiles>
 	    <AdditionalFile owner="root" permission="0644" target="/usr/lib/firefox/distribution/policies.json">policies.json</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/lib/firefox/browser/defaults/preferences/kedi-firefox.js">kedi-firefox.js</AdditionalFile>
-            <AdditionalFile owenr="root" permission="0644" target="/etc/gtk-3.0/settings.ini>settings.ini</AdditionalFile>"
+            <AdditionalFile owner="root" permission="0644" target="/etc/gtk-3.0/settings.ini">settings.ini</AdditionalFile>
         </AdditionalFiles>
     </Package>
     <History>
