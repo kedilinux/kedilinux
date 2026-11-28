@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>iwd-applet</Name>
+        <Homepage>https://github.com/cilegordev/iwd-applet</Homepage>
+        <Packager>
+            <Name>Lemi Sander</Name>
+            <Email>kedilinux@tuta.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>app:gui</IsA>
+        <Summary>iwd-applet wifi panel</Summary>
+        <Description>This package replaces iwgtk on Kedi GNU/Linux for a more sleek desktop design, replacing windowed app with a panel popup-style gtk app</Description>
+        <Archive sha1sum="e99a5894e945e4aae35332859e896229d499d79a" type="targz">https://github.com/cilegordev/iwd-applet/archive/refs/tags/0.2.2.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>iwd-applet</Name>
+        <RuntimeDependencies>
+            <Dependency>iwd</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>libdbusmenu-glib</Dependency>
+            <Dependency>gtk3</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="config">/etc/autostart</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2026-11-28</Date>
+            <Version>0.2.2</Version>
+            <Comment>First release, for Kedi Linux</Comment>
+            <Name>Lemi Sander</Name>
+            <Email>kedilinux@tuta.com</Email>
+        </Update>
+    </History>
+</PISI>
