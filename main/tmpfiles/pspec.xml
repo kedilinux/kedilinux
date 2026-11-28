@@ -41,7 +41,6 @@
         </Replaces>
     </Package>
     <History>
-        </Update>
         <Update release="1">
             <Date>2026-11-28</Date>
             <Version>0.99.3</Version>
