@@ -19,3 +19,5 @@ def build():
 def install():
     pisitools.insinto("/usr/bin", "build/src/tmpfiles/sd-tmpfiles")
     pisitools.dodoc("README.md", "LICENSE.LGPL2.1")
+    pisitools.dosym("tmpfiles-setup", "/etc/init.d/systemd-tmpfiles-setup")
+    pisitools.dosym("tmpfiles-setup-dev", "/etc/init.d/systemd-tmpfiles-setup-dev")
