@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Standalone tmpfiles tool</Summary>
         <Description>Standalone, cleaned up utilities from systemd. Forked from chimera's sd-tools, built for Kedi GNU/Linux or other systems and GNU libc.</Description>
-        <Archive sha1sum="595673f38f2b17f7674f214e23cba5ecab5e4e2e" type="targz">https://github.com/kedilinux/kedilinux-tmpfiles/archive/refs/tags/v0.99.3.tar.gz</Archive>
+        <Archive sha1sum="595673f38f2b17f7674f214e23cba5ecab5e4e2e" type="targz">https://github.com/kedilinux/tmpfiles/archive/refs/tags/v0.99.3.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>meson</Dependency>
             <Dependency>libcap-devel</Dependency>
