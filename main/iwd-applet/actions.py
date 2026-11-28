@@ -22,3 +22,4 @@ def install():
     pisitools.domove("/etc/xdg/autostart/org.iwdapplet.IwdApplet.desktop", "/etc/autostart")
     pisitools.removeDir("/etc/xdg")
     pisitools.dodoc("README.md", "LICENSE")
+    pisitools.dosed("/etc/autostart/org.iwdapplet.IwdApplet.desktop", "^Exec=.*", "Exec=env GTK_THEME=Kedi-dark iwd-applet")
