@@ -72,9 +72,17 @@
         <AdditionalFiles>
 	    <AdditionalFile owner="root" permission="0644" target="/usr/lib/firefox/distribution/policies.json">policies.json</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/lib/firefox/browser/defaults/preferences/kedi-firefox.js">kedi-firefox.js</AdditionalFile>
+            <AdditionalFile owenr="root" permission="0644" target="/etc/gtk-3.0/settings.ini>settings.ini</AdditionalFile>"
         </AdditionalFiles>
     </Package>
     <History>
+        <Update release="14">
+            <Date>2026-11-28</Date>
+            <Version>8</Version>
+            <Comment>Add default gtk theme Kedi-dark for gtk apps</Comment>
+            <Name>Lemi Sander</Name>
+            <Email>kedilinux@tuta.com</Email>
+        </Update>
         <Update release="13">
             <Date>2026-11-25</Date>
             <Version>8</Version>
