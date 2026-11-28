@@ -13,6 +13,12 @@
         <Summary>iwd-applet wifi panel</Summary>
         <Description>This package replaces iwgtk on Kedi GNU/Linux for a more sleek desktop design, replacing windowed app with a panel popup-style gtk app</Description>
         <Archive sha1sum="e99a5894e945e4aae35332859e896229d499d79a" type="targz">https://github.com/cilegordev/iwd-applet/archive/refs/tags/0.2.2.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>meson</Dependency>
+            <Dependency>gtk3-devel</Dependency>
+            <Dependency>libnotify-devel</Dependency>
+            <Dependency>libdbusmenu-devel</Dependency>
+        </BuildDependencies>
     </Source>
     <Package>
         <Name>iwd-applet</Name>

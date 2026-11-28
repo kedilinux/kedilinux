@@ -13,12 +13,6 @@
         <Summary>iwd-openrc is the init.d script required for iwd on OpenRC</Summary>
         <Description>iwd-openrc is the init.d script required for iwd on OpenRC. This is for the base iso of Kedi Linux</Description>
         <Archive sha1sum="30f59b65c11b4a3fabc17726fff050875647c41f" type="binary">https://raw.githubusercontent.com/gentoo/gentoo/50a1101f3c952f5086171aaf188ce09033f38f7f/net-wireless/iwd/files/iwd.initd-r1</Archive>
-        <BuildDependencies>
-            <Dependency>meson</Dependency>
-            <Dependency>gtk3-devel</Dependency>
-            <Dependency>libnotify-devel</Dependency>
-            <Dependency>libdbusmenu-devel</Dependency>
-        </BuildDependencies>
     </Source>
     <Package>
         <Name>iwd-openrc</Name>
