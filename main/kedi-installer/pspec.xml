@@ -13,7 +13,7 @@
         <PartOf>system.installer</PartOf>
         <Summary>kedi-installer is the calamares for Kedi GNU/Linux</Summary>
         <Description>kedi-installer contains the Calamares settings, branding and live-session permissions for the Kedi GNU/Linux live ISO. Calamares removes it after installing.</Description>
-        <Archive sha1sum="aab6e83864be64691986162523b3e14efb76ec8d" type="targz">https://repo.kedilinux.org/src/kedi-installer-9.tar.gz</Archive>
+        <Archive sha1sum="c16d12315b6d132cebf2a4407018e982564fd0ba" type="targz">https://repo.kedilinux.org/src/kedi-installer-10.tar.gz
     </Source>
     <Package>
         <Name>kedi-installer</Name>
@@ -31,7 +31,7 @@
     </Package>
     <History>
         <Update release="10">
-            <Date>2026-11-21</Date>
+            <Date>2026-11-28</Date>
             <Version>10</Version>
             <Comment>Ver. bump</Comment>
             <Name>Lemi Sander</Name>
