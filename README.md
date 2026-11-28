@@ -7,7 +7,7 @@
 # Kedi GNU/Linux Nedir? What is Kedi GNU/Linux?
 
 Kedi GNU/Linux, OpenRC üzerine kurulu bir Pisi GNU/Linux çatalıdır. Basit bir PID 1 sunar; LXQt masaüstüyle eski ve düşük donanımlı bilgisayarları hedefler.
-Bu depoda, repo.kedilinux.org'daki paketlerin tarifleri (pspec.xml, actions.py) bulunur. O depoyu kullanmak için önce kedi.asc anahtarını root'un anahtarlığına aktarın. Erken ve test ISO (Base, ya da LXQt grafiksel kurulumla)iso.kedilinux.org'dan indirebilirsin, Kedi GNU/Linux günlük kullanım için değildir.
+Bu depoda, repo.kedilinux.org'daki paketlerin tarifleri (pspec.xml, actions.py) bulunur. O depoyu kullanmak için önce kedi.asc anahtarını root'un anahtarlığına aktarın. Kararlı ISO (Base, ya da LXQt grafiksel kurulumla)iso.kedilinux.org'dan indirebilirsin. Kedi GNU/Linux genç bir projedir ve sorun bulursanız lütfen Issues'da rapor edin.
 
 Kedi GNU/Linux is an OpenRC-based fork of Pisi GNU/Linux. It has a simple PID 1, and its LXQt desktop is aimed at older and low-end computers.
-In this repo, you can find package recipies (pspec.xml, actions.py) for the repository at repo.kedilinux.org. In order to use that repo, first import kedi.asc to your root keyring. Right now, you can download an early, testing iso (Base, or LXQt with a graphical installer) from iso.kedilinux.org. Kedi GNU/Linux is not for everyday use. 
+In this repo, you can find package recipies (pspec.xml, actions.py) for the repository at repo.kedilinux.org. In order to use that repo, first import kedi.asc to your root keyring. Right now, you can download an stable ISO (Base, or LXQt with a graphical installer) from iso.kedilinux.org. Kedi GNU/Linux is still a young project, so please report any issues in the Issues tab. 
